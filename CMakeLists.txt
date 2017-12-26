@@ -7,7 +7,7 @@ add_definitions(-std=c++11)
 set(CXX_FLAGS "-Wall")
 set(CMAKE_CXX_FLAGS "${CXX_FLAGS}")
 
-# Boost for gnuplot-iostream.h
+## Boost for gnuplot-iostream.h
 find_package(Boost REQUIRED COMPONENTS system iostreams)
 if(Boost_FOUND)
 
@@ -18,8 +18,6 @@ if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
 
 endif()
-
-
 
 set(sources src/PID.cpp src/main.cpp src/gnuplot-iostream.h)
 
@@ -37,6 +35,6 @@ endif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 
 add_executable(pid ${sources})
 
-# target_link_libraries for gnuplot-iostream.h
+## target_link_libraries for gnuplot-iostream.h
 # target_link_libraries(pid z ssl uv uWS)
 target_link_libraries(pid z ssl uv uWS ${Boost_LIBRARIES})

@@ -48,9 +48,9 @@ Tips for setting up your environment can be found [here](https://classroom.udaci
 
 [//]: # (Image References)
 
-[image1]: ./output/PID_015_0_0.png.png "PID_0.15_0_0"
-[image2]: ./output/PID_015_0_25.png.png "PID_0.15_0_2.5"
-[image3]: ./output/PID_015_0000001_25.png_25.png.png "PID_0.15_0.000001_2.5"
+[image1]: ./output/PID_015_0_0.png "PID_0.15_0_0"
+[image2]: ./output/PID_015_0_25.png "PID_0.15_0_2.5"
+[image3]: ./output/PID_015_0000001_25.png "PID_0.15_0.000001_2.5"
 
 1. **Compilation**:   Your code should compile.
 
